@@ -1,0 +1,14 @@
+node('master') {
+
+
+git branch: 'main', url: 'https://github.com/amitvashisttech/jenkins-terraform-pwc-13-July-21.git'
+
+sh 'mvn clean  -f 02-App-Code/petclinic-code/pom.xml'
+sh 'mvn compile  -f 02-App-Code/petclinic-code/pom.xml'
+sh 'mvn test  -f 02-App-Code/petclinic-code/pom.xml'
+sh 'mvn package  -f 02-App-Code/petclinic-code/pom.xml'
+
+
+
+}
+
