@@ -8,7 +8,7 @@ sudo su -
 
 ### Download Jenkins & Install Java JDK
 ```
-  apt-get install default-jdk -y
+  apt-get update; apt-get install default-jdk -y
   java -version
   wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war
   mv jenkins.war /root/
