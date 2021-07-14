@@ -1,0 +1,11 @@
+---
+
+- hosts: all 
+  become: yes 
+  tasks: 
+  - name: Install NTP Server
+    apt: name=ntp state=present 
+
+  
+  - name: Start NTPD Service
+    service: name=ntp state=started
